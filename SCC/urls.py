@@ -15,8 +15,13 @@ Including another URLconf
 """
 from django.conf.urls import url, include
 from django.contrib import admin
+from dashboard.views import dashboardListView
 
 urlpatterns = [
     url(r'^jet/', include('jet.urls', 'jet')),  # Django JET URLS
+    
+    url(r'^$', dashboardListView.as_view()),
+    url(r'^dashboard/$', dashboardListView.as_view()),
+
     url(r'^admin/', admin.site.urls),
 ]

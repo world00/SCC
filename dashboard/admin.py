@@ -2,7 +2,7 @@
 from __future__ import unicode_literals
 
 from django.contrib import admin
-from .models import sht, sht_incidents, sht_monitoring, sht_tasks, sht_other
+from .models import sht, sht_incidents, sht_monitoring, sht_tasks, sht_other, oncall
 
 # Register your models here.
 
@@ -27,5 +27,7 @@ class shtAdmin(admin.ModelAdmin):
         ('Shift Handover for', {'fields': ['pd']}),
     ]
     inlines = [sht_incidents_Inline, sht_monitoring_Inline, sht_tasks_Inline, sht_other_Inline]
+
+admin.site.register(oncall)
 
 admin.site.register(sht, shtAdmin)

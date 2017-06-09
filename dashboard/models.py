@@ -126,3 +126,22 @@ class sht_other(models.Model):
 
     def __unicode__(self):
         return self.name
+
+#---------------------------------------------
+#   On-Call List
+#---------------------------------------------
+
+class oncall(models.Model):
+    """Model definition for oncall."""
+    team = models.CharField(max_length=50, blank=False)
+    phone_number = models.CharField(max_length=50, blank=False)
+
+    class Meta:
+        verbose_name = 'oncall'
+        verbose_name_plural = 'oncalls'
+
+    def __str__(self):
+        return self.team + ' | ' + self.phone_number
+
+    def __unicode__(self):
+        return self.team + ' | ' + self.phone_number

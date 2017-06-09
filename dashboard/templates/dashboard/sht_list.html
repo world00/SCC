@@ -1,0 +1,267 @@
+{% extends "base.html" %}{% block SHT %}
+<h2>Shifthandover</h2>
+<ul>
+    {% for sht in sht_list %}
+    <li>{{ form.sht }}</li>
+    {% endfor %}
+
+    <form action="/sht_list/" method="post">
+        {% csrf_token %} {{ form }}
+        <input type="submit" value="Submit" />
+    </form>
+</ul>
+
+
+
+
+
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <i class="fa fa-random fa-fw"></i> Shift Handover
+            </div>
+            <!-- /.panel-heading -->
+            <div class="panel-body">
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs">
+                    <li><a href="#home" data-toggle="tab">Monitoring</a>
+                    </li>
+                    <li><a href="#profile" data-toggle="tab">Incidents</a>
+                    </li>
+                    <li><a href="#messages" data-toggle="tab">Changes</a>
+                    </li>
+                    <li><a href="#settings" data-toggle="tab">Other</a>
+                    </li>
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div class="tab-pane fade in active" id="home">
+                        <div class="panel-group" id="accordion">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">IM11832415</a>
+                                    </h4>
+                                </div>
+                                <div id="collapseOne" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <h4>Application</h4>
+                                        <p style="padding:10px">Netline Crew</p>
+                                        <h4>Costumer</h4>
+                                        <p style="padding:10px">GOL</p>
+                                        <h4>Description</h4>
+                                        <p style="padding:10px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">IM11832397</a>
+                                    </h4>
+                                </div>
+                                <div id="collapseTwo" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <h4>Application</h4>
+                                        <p style="padding:10px">Netline Crew</p>
+                                        <h4>Costumer</h4>
+                                        <p style="padding:10px">GOL</p>
+                                        <h4>Description</h4>
+                                        <p style="padding:10px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">IM11832656</a>
+                                    </h4>
+                                </div>
+                                <div id="collapseThree" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <h4>Application</h4>
+                                        <p style="padding:10px">Netline Crew</p>
+                                        <h4>Costumer</h4>
+                                        <p style="padding:10px">GOL</p>
+                                        <h4>Description</h4>
+                                        <p style="padding:10px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="profile">
+                        <div class="panel-group" id="accordion2">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion2" href="#collapseOne1">IM11832415</a>
+                                    </h4>
+                                </div>
+                                <div id="collapseOne1" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <h4>Application</h4>
+                                        <p style="padding:10px">Netline Crew</p>
+                                        <h4>Costumer</h4>
+                                        <p style="padding:10px">GOL</p>
+                                        <h4>Description</h4>
+                                        <p style="padding:10px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo1">IM11832397</a>
+                                    </h4>
+                                </div>
+                                <div id="collapseTwo1" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <h4>Application</h4>
+                                        <p style="padding:10px">Netline Crew</p>
+                                        <h4>Costumer</h4>
+                                        <p style="padding:10px">GOL</p>
+                                        <h4>Description</h4>
+                                        <p style="padding:10px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion2" href="#collapseThree1">IM11832656</a>
+                                    </h4>
+                                </div>
+                                <div id="collapseThree1" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <h4>Application</h4>
+                                        <p style="padding:10px">Netline Crew</p>
+                                        <h4>Costumer</h4>
+                                        <p style="padding:10px">GOL</p>
+                                        <h4>Description</h4>
+                                        <p style="padding:10px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="messages">
+                        <div class="panel-group" id="accordion3">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion3" href="#collapseOne2">IM11832415</a>
+                                    </h4>
+                                </div>
+                                <div id="collapseOne2" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <h4>Application</h4>
+                                        <p style="padding:10px">Netline Crew</p>
+                                        <h4>Costumer</h4>
+                                        <p style="padding:10px">GOL</p>
+                                        <h4>Description</h4>
+                                        <p style="padding:10px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion3" href="#collapseTwo2">IM11832397</a>
+                                    </h4>
+                                </div>
+                                <div id="collapseTwo2" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <h4>Application</h4>
+                                        <p style="padding:10px">Netline Crew</p>
+                                        <h4>Costumer</h4>
+                                        <p style="padding:10px">GOL</p>
+                                        <h4>Description</h4>
+                                        <p style="padding:10px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion3" href="#collapseThree2">IM11832656</a>
+                                    </h4>
+                                </div>
+                                <div id="collapseThree2" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <h4>Application</h4>
+                                        <p style="padding:10px">Netline Crew</p>
+                                        <h4>Costumer</h4>
+                                        <p style="padding:10px">GOL</p>
+                                        <h4>Description</h4>
+                                        <p style="padding:10px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="settings">
+                        <div class="panel-group" id="accordion4">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion4" href="#collapseOne3">IM11832415</a>
+                                    </h4>
+                                </div>
+                                <div id="collapseOne3" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <h4>Application</h4>
+                                        <p style="padding:10px">Netline Crew</p>
+                                        <h4>Costumer</h4>
+                                        <p style="padding:10px">GOL</p>
+                                        <h4>Description</h4>
+                                        <p style="padding:10px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion4" href="#collapseTwo3">IM11832397</a>
+                                    </h4>
+                                </div>
+                                <div id="collapseTwo3" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <h4>Application</h4>
+                                        <p style="padding:10px">Netline Crew</p>
+                                        <h4>Costumer</h4>
+                                        <p style="padding:10px">GOL</p>
+                                        <h4>Description</h4>
+                                        <p style="padding:10px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion4" href="#collapseThree3">IM11832656</a>
+                                    </h4>
+                                </div>
+                                <div id="collapseThree3" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <h4>Application</h4>
+                                        <p style="padding:10px">Netline Crew</p>
+                                        <h4>Costumer</h4>
+                                        <p style="padding:10px">GOL</p>
+                                        <h4>Description</h4>
+                                        <p style="padding:10px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /.panel-body -->
+        </div>
+        <!-- /.panel -->
+
+        {% endblock %}
